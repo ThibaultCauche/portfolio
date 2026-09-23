@@ -1,36 +1,61 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Portfolio — Thibault Cauche
 
-## Getting Started
+Mon site personnel : présentation, parcours, compétences et projets. Disponible en français, anglais et allemand.
 
-First, run the development server:
+🔗 [thibaultcauche.com](https://www.thibaultcauche.com)
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+## Fonctionnalités
+
+- Site multilingue (fr / en / de) avec détection automatique de la langue du navigateur
+- Timeline expériences pro / études, compétences groupées par catégorie
+- Skateboard 3D interactif (Three.js) et galerie photo
+- Formulaire de contact (Formspree) avec protection anti-spam (honeypot)
+- Pages Mentions légales / Confidentialité, image de partage social générée dynamiquement, sitemap
+- Analytics sans cookie (Plausible)
+
+## Stack
+
+- **Framework** : Next.js 15 (App Router, Turbopack), React 19, TypeScript
+- **UI** : Tailwind CSS v4, Radix UI, Framer Motion, Lucide
+- **3D** : Three.js / @react-three/fiber / drei
+- **i18n** : next-intl
+- **Déploiement** : Vercel
+
+## Architecture
+
+```
+src/
+├─ app/
+│  ├─ [locale]/          # routes localisées (fr/en/de)
+│  │  ├─ layout.tsx      # providers (i18n, thème), metadata, analytics
+│  │  ├─ page.tsx        # assemble les sections de la home
+│  │  ├─ mentions-legales/, confidentialite/
+│  │  └─ opengraph-image.tsx  # image de partage générée à la volée
+│  ├─ sections/          # Hero, About, Timeline, Skills, Projects, Contact, Footer
+│  └─ sitemap.ts, robot.ts
+├─ components/           # nav, fonds animés, primitives UI
+├─ messages/              # fr.json, en.json, de.json (tout le texte du site)
+└─ i18n/                 # config next-intl
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Le routage multilingue passe par un middleware `next-intl` qui préfixe chaque page par `/fr`, `/en` ou `/de`. Tout le contenu textuel (y compris les expériences et les compétences) vit dans `src/messages/*.json`, donc éditer le site ne demande pas de toucher aux composants.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## Lancer le projet
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+```bash
+pnpm install
+pnpm dev
+```
 
-## Learn More
+Puis ouvrir [http://localhost:3000](http://localhost:3000).
 
-To learn more about Next.js, take a look at the following resources:
+```bash
+pnpm build && pnpm start   # build de prod
+pnpm lint                  # ESLint
+```
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## Choix techniques
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+- **`images.unoptimized: true`** : les photos sont pré-converties en WebP par `scripts/gen-photos-manifest.mjs` / `convert_photos.py` plutôt que de dépendre de l'optimiseur d'images de Next au runtime.
+- **Pas de bannière de cookies** : Plausible ne pose aucun cookie et le seul cookie du site (`NEXT_LOCALE`) est strictement fonctionnel — inutile d'ajouter une bannière RGPD pour rien.
+- **CSP stricte** définie dans `next.config.ts`, calée sur les domaines tiers réellement utilisés (Formspree, Plausible, Iconify, assets Three.js/drei).
