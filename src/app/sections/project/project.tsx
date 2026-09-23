@@ -1,6 +1,7 @@
 "use client";
 import MaquettesSection from "./application";
 import SkateboardsSection from "./skateboard";
+import DevProjectsSection from "./dev-projects";
 import GlassBlock from "@/components/GlassBlock";
 import { useTranslations } from "next-intl";
 import dynamic from "next/dynamic";
@@ -23,6 +24,8 @@ export default function Projects() {
             <p className="text-foreground/80 leading-relaxed">{t("p4")}</p>
           </GlassBlock>
         </div>
+
+        <DevProjectsSection />
 
         <MaquettesSection />
         <SkateboardsSection />

@@ -186,6 +186,18 @@
     }
   },
   "Projects": {
+    "Dev": {
+      "title": "PROJETS DEV",
+      "intro": "Une sélection de projets, avec le code source sur GitHub.",
+      "items": {
+        "chewlinboard": { "name": "ChewlinBoard", "pitch": "Application Flutter de création et vente de skateboards personnalisés, avec aperçu 3D et paiement en ligne." },
+        "vinland": { "name": "Vinland", "pitch": "Lecteur de musique qui streame ma bibliothèque depuis mon NAS auto-hébergé, avec playlists collaboratives." },
+        "gymtimer": { "name": "GymTimer", "pitch": "Suivi de séances de musculation avec chronomètre de repos actif en tâche de fond." },
+        "nas": { "name": "NAS auto-hébergé", "pitch": "Héberge mes fichiers et mes applications, accessibles depuis l'extérieur via des tunnels sécurisés." },
+        "portfolio": { "name": "Portfolio", "pitch": "Ce site : Next.js, TypeScript, Tailwind CSS et Framer Motion." },
+        "discordbot": { "name": "Bot Discord", "pitch": "Suivi de films Letterboxd par RSS, enrichi via l'API TMDb." }
+      }
+    },
     "Intro": {
       "title": "PROJETS",
       "p1": "Chaque projet que je réalise est une nouvelle aventure, un terrain d’expérimentation où je peux mélanger technique, design et créativité.",
