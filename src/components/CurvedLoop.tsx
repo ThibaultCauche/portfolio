@@ -70,7 +70,7 @@ const CurvedLoop: FC<CurvedLoopProps> = ({
     if (!spacing) return;
     if (textPathRef.current) {
       const initial = -(spacing - 1);
-      textPathRef.current.style.transform;
+      textPathRef.current.setAttribute('startOffset', String(initial));
       setOffset(initial);
     }
   }, [spacing]);
@@ -110,7 +110,7 @@ const CurvedLoop: FC<CurvedLoopProps> = ({
 
         // startOffset attendu par <textPath> est négatif
         const start = -offsetRef.current;
-        textPathRef.current.style.transform = `translateX(${start}px)`;
+        textPathRef.current.setAttribute('startOffset', String(start));
       }
 
       raf = requestAnimationFrame(tick);
@@ -142,7 +142,7 @@ const CurvedLoop: FC<CurvedLoopProps> = ({
     const nextPos = wrap(currentPos - dx, spacing);  // -dx car startOffset est négatif
 
     offsetRef.current = nextPos;
-    textPathRef.current.style.transform = `translateX(${-nextPos}px)`;
+    textPathRef.current.setAttribute('startOffset', String(-nextPos));
   };
 
   const endDrag = () => {
