@@ -8,11 +8,34 @@ import CurvedLoop from "@/components/CurvedLoop";
 import GradualBlurOverlay from "@/components/GradualBlurOverlay";
 import Footer from "@/app/sections/footer";
 import { Metadata } from "next";
+import { getTranslations } from "next-intl/server";
 
-export const metadata: Metadata = {
-  title: "Thibault Cauche — Développeur Full-Stack & Designer",
-  description: "Portfolio de Thibault Cauche : développeur full-stack, UI/UX designer. Projets React, Flutter, Next.js.",
-};
+const SITE_URL = "https://www.thibaultcauche.com";
+const LOCALES = ["fr", "en", "de"] as const;
+
+export async function generateMetadata({
+  params,
+}: {
+  params: Promise<{ locale: string }>;
+}): Promise<Metadata> {
+  const { locale } = await params;
+  const t = await getTranslations({ locale, namespace: "Meta" });
+
+  return {
+    title: t("title"),
+    description: t("description"),
+    alternates: {
+      canonical: `${SITE_URL}/${locale}`,
+      languages: Object.fromEntries(LOCALES.map((l) => [l, `${SITE_URL}/${l}`])),
+    },
+    openGraph: {
+      title: t("title"),
+      description: t("description"),
+      url: `${SITE_URL}/${locale}`,
+    },
+    twitter: { title: t("title"), description: t("description") },
+  };
+}
 
 const Parcours = dynamic(() => import("@/app/sections/parcours"));
 const Skills = dynamic(() => import("@/app/sections/skills"));

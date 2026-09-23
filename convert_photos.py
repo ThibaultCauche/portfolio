@@ -1,9 +1,10 @@
 from PIL import Image
 import os, glob, json
 
+SRC_DIR = "photos-originals"
 DIR = "public/photos"
 
-for path in glob.glob(os.path.join(DIR, "*.jpg")) + glob.glob(os.path.join(DIR, "*.JPG")):
+for path in glob.glob(os.path.join(SRC_DIR, "*.jpg")) + glob.glob(os.path.join(SRC_DIR, "*.JPG")):
     img = Image.open(path)
     
     # Applique l'orientation EXIF

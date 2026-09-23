@@ -1,6 +1,7 @@
 import "../styles/globals.css";
 import "../styles/cv-button.css";
 import type { Metadata } from "next";
+import Script from "next/script";
 import Nav from "@/components/nav";
 import GlobalBlobs from "@/components/GlobalBlobs";
 import { NextIntlClientProvider } from "next-intl";
@@ -16,6 +17,7 @@ export const viewport = {
 };
 
 export const metadata: Metadata = {
+  metadataBase: new URL("https://www.thibaultcauche.com"),
   title: "Thibault Cauche — Développeur Full-Stack & Designer",
   description: "Portfolio de Thibault Cauche : développeur full-stack, UI/UX designer. Projets React, Flutter, Next.js.",
   openGraph: {
@@ -46,6 +48,14 @@ export default async function RootLayout({
   return (
     <html lang={locale} suppressHydrationWarning>
       <body className="relative bg-[#1c1b21] text-foreground">
+        {process.env.NODE_ENV === "production" && (
+          <Script
+            defer
+            data-domain="thibaultcauche.com"
+            src="https://plausible.io/js/script.js"
+            strategy="afterInteractive"
+          />
+        )}
         <GlobalBlobs
           balls={[
             { x: "50%", y: "-5%", w: "80vmax", color: "#8b5cf6", opacity: 0.3, blur: "80px", speed: "22s" },

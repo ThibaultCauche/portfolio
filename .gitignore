@@ -36,6 +36,9 @@ yarn-error.log*
 # vercel
 .vercel
 
+# raw photo originals (kept locally for convert_photos.py, never deployed)
+/photos-originals
+
 # typescript
 *.tsbuildinfo
 next-env.d.ts

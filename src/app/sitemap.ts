@@ -1,11 +1,21 @@
 import { MetadataRoute } from 'next';
 
+const base = 'https://www.thibaultcauche.com';
+const locales = ['fr', 'en', 'de'];
+
 export default function sitemap(): MetadataRoute.Sitemap {
-  const base = 'https://www.thibaultcauche.com';
-  const paths = ['', '/fr', '/en', '/de'];
-  return paths.map((p) => ({
-    url: `${base}${p}`,
-    lastModified: new Date(),
-    priority: p === '' ? 1 : 0.8,
+  const now = new Date();
+  const home = locales.map((locale) => ({
+    url: `${base}/${locale}`,
+    lastModified: now,
+    priority: 1,
   }));
+  const legal = ['mentions-legales', 'confidentialite'].flatMap((slug) =>
+    locales.map((locale) => ({
+      url: `${base}/${locale}/${slug}`,
+      lastModified: now,
+      priority: 0.3,
+    }))
+  );
+  return [...home, ...legal];
 }

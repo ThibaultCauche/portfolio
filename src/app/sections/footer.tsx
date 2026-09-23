@@ -2,11 +2,13 @@
 
 import React from "react";
 import { Mail } from "lucide-react";
-import { useTranslations } from "next-intl";
+import { useTranslations, useLocale } from "next-intl";
+import Link from "next/link";
 
 export default function Footer() {
   const year = new Date().getFullYear();
   const t = useTranslations("Footer");
+  const locale = useLocale();
 
   return (
     <footer className="relative border-t border-white/10 bg-black/20">
@@ -22,6 +24,15 @@ export default function Footer() {
             <p className="text-sm text-white/60">
               © Thibault {year}. {t("rights")}
             </p>
+            <div className="flex items-center gap-3 pt-1 text-xs text-white/50">
+              <Link href={`/${locale}/mentions-legales`} className="hover:text-white hover:underline">
+                {t("legalNotice")}
+              </Link>
+              <span aria-hidden="true">·</span>
+              <Link href={`/${locale}/confidentialite`} className="hover:text-white hover:underline">
+                {t("privacyPolicy")}
+              </Link>
+            </div>
           </div>
           <div className="text-sm text-white/50">
             <p>{t("madeWith")}</p>

@@ -17,6 +17,7 @@ export default function ContactSection() {
   const [status, setStatus] = React.useState<"idle" | "ok" | "error">("idle");
   const [emailError, setEmailError] = React.useState("");
   const [isMedium, setIsMedium] = React.useState(false);
+  const [honeypot, setHoneypot] = React.useState("");
 
   React.useEffect(() => {
     const checkWidth = () => {
@@ -37,6 +38,7 @@ export default function ContactSection() {
   async function onSubmit(e: React.FormEvent) {
   e.preventDefault();
   setStatus("idle");
+  if (honeypot) return; // bot caught by honeypot, silently drop
   const err = validateEmail(email);
   if (err) { setEmailError(err); return; }
   setLoading(true);
@@ -45,7 +47,7 @@ export default function ContactSection() {
     const res = await fetch("https://formspree.io/f/xqpkkowj", {
       method: "POST",
       headers: { "Accept": "application/json", "Content-Type": "application/json" },
-      body: JSON.stringify({ name, email, message }),
+      body: JSON.stringify({ name, email, message, _gotcha: honeypot }),
     });
     if (res.ok) {
       setStatus("ok");
@@ -76,6 +78,17 @@ export default function ContactSection() {
 
         <GlassBlock variant="base" className="mt-10 p-6 md:p-8">
           <form onSubmit={onSubmit} className="grid gap-4 md:gap-5">
+            {/* Honeypot: hidden from real users, tricks basic bots */}
+            <input
+              type="text"
+              name="_gotcha"
+              value={honeypot}
+              onChange={(e) => setHoneypot(e.target.value)}
+              tabIndex={-1}
+              autoComplete="off"
+              aria-hidden="true"
+              className="absolute -left-[9999px] h-0 w-0 opacity-0"
+            />
             <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
               {/* Nom */}
               <label htmlFor="contact-name" className="grid gap-1">
@@ -86,6 +99,8 @@ export default function ContactSection() {
                   value={name}
                   onChange={(e) => setName(e.target.value)}
                   placeholder={t("placeholders.name")}
+                  maxLength={100}
+                  required
                   className="rounded-xl bg-white/5 text-white placeholder-white/40 border border-white/10 px-3 py-2 outline-none focus:ring-2 focus:ring-white/30"
                 />
               </label>
@@ -140,6 +155,7 @@ export default function ContactSection() {
                 onChange={(e) => setMessage(e.target.value)}
                 placeholder={t("placeholders.message")}
                 rows={6}
+                maxLength={3000}
                 className="rounded-2xl bg-white/5 text-white placeholder-white/40 border border-white/10 px-3 py-3 outline-none focus:ring-2 focus:ring-white/30"
                 required
               />

@@ -1,4 +1,8 @@
 {
+  "Meta": {
+    "title": "Thibault Cauche — Full-Stack-Entwickler & Designer",
+    "description": "Portfolio von Thibault Cauche: Full-Stack-Entwickler, UI/UX-Designer. React-, Flutter- und Next.js-Projekte."
+  },
   "Nav": {
     "home": "Start",
     "about": "Über mich",
@@ -243,6 +247,13 @@
   "Footer": {
     "emailAria": "E-Mail senden",
     "rights": "Alle Rechte vorbehalten.",
-    "madeWith": "Erstellt mit Next.js"
+    "madeWith": "Erstellt mit Next.js",
+    "legalNotice": "Impressum",
+    "privacyPolicy": "Datenschutz"
+  },
+  "NotFound": {
+    "title": "Seite nicht gefunden",
+    "description": "Die gesuchte Seite existiert nicht oder wurde verschoben.",
+    "cta": "Zurück zur Startseite"
   }
 }
