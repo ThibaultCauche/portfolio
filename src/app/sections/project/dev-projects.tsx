@@ -1,12 +1,12 @@
 "use client";
 
-import { Github, Music2, Dumbbell, Server, Globe, MessagesSquare } from "lucide-react";
+import { Github, Smartphone, Music2, Dumbbell, Server, Globe, MessagesSquare } from "lucide-react";
 import GlassBlock from "@/components/GlassBlock";
 import { Badge } from "@/components/ui/badge";
 import { useTranslations } from "next-intl";
 
-// ChewlinBoard n'est pas ici : il a déjà sa propre section détaillée juste en dessous.
 const PROJECTS = [
+  { key: "chewlinboard", icon: Smartphone, repo: "https://github.com/Tibobg/ChewlinBoard", tags: ["Flutter", "Dart", "Firebase"] },
   { key: "vinland", icon: Music2, repo: "https://github.com/Tibobg/vinland", tags: ["Flutter", "Dart", "Navidrome"] },
   { key: "gymtimer", icon: Dumbbell, repo: "https://github.com/Tibobg/GymTimer", tags: ["Flutter", "Dart"] },
   { key: "nas", icon: Server, repo: null, tags: ["Docker", "Réseau", "Tunnels"] },

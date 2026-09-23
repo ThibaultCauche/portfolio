@@ -190,6 +190,7 @@
       "title": "DEV PROJECTS",
       "intro": "A selection of projects, source code on GitHub.",
       "items": {
+        "chewlinboard": { "name": "ChewlinBoard", "pitch": "Flutter app to design and sell custom skateboards, with a 3D preview and online checkout." },
         "vinland": { "name": "Vinland", "pitch": "Music player streaming my library from my self-hosted NAS, with collaborative playlists." },
         "gymtimer": { "name": "GymTimer", "pitch": "Workout tracker with a rest timer that keeps running in the background." },
         "nas": { "name": "Self-hosted NAS", "pitch": "Hosts my files and apps, reachable from outside through secure tunnels." },
@@ -203,15 +204,6 @@
       "p2": "From web development to object design and visual creation, I explore different ways to bring ideas to life. These projects are a concrete way to learn, grow, and push my limits while nurturing curiosity.",
       "p3": "Here you’ll find what drives me: from a mobile app for selling and customizing decorative skateboards, to handcrafting my own display decks, and photography including drone video.",
       "p4": "Each project reflects my vision: create with meaning, learn by doing, and share unique experiences."
-    },
-    "App": {
-      "title": "APPLICATION",
-      "p1": "Built entirely with Flutter, this mobile app offers a simple, aesthetic, and interactive experience for creating and customizing decorative skateboards.",
-      "p2": "Users can create an account, browse my creations, purchase available models, or design their own board by choosing the deck type and the visual they like.",
-      "p3": "It also includes delivery-date selection and direct messaging, enabling personalized contact to follow up or adjust an order.",
-      "p4": "This project blends design, UX and full-stack logic in a mobile environment, leveraging Flutter’s power and flexibility for a smooth and coherent interface.",
-      "cta": "COMING SOON",
-      "alt": "Mobile app preview"
     },
     "Skate": {
       "title": "SKATEBOARD",

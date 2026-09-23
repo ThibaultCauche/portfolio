@@ -1,5 +1,4 @@
 "use client";
-import MaquettesSection from "./application";
 import SkateboardsSection from "./skateboard";
 import DevProjectsSection from "./dev-projects";
 import GlassBlock from "@/components/GlassBlock";
@@ -27,7 +26,6 @@ export default function Projects() {
 
         <DevProjectsSection />
 
-        <MaquettesSection />
         <SkateboardsSection />
       </div>
 

@@ -190,6 +190,7 @@
       "title": "PROJETS DEV",
       "intro": "Une sélection de projets, avec le code source sur GitHub.",
       "items": {
+        "chewlinboard": { "name": "ChewlinBoard", "pitch": "Application Flutter de création et vente de skateboards personnalisés, avec aperçu 3D et paiement en ligne." },
         "vinland": { "name": "Vinland", "pitch": "Lecteur de musique qui streame ma bibliothèque depuis mon NAS auto-hébergé, avec playlists collaboratives." },
         "gymtimer": { "name": "GymTimer", "pitch": "Suivi de séances de musculation avec chronomètre de repos actif en tâche de fond." },
         "nas": { "name": "NAS auto-hébergé", "pitch": "Héberge mes fichiers et mes applications, accessibles depuis l'extérieur via des tunnels sécurisés." },
@@ -203,15 +204,6 @@
       "p2": "Que ce soit à travers le développement web, la conception d’objets ou la création visuelle, j’aime explorer différentes façons de donner vie à mes idées. Ces projets sont pour moi une manière concrète d’apprendre, d’évoluer, et de repousser mes limites tout en cultivant ma curiosité.",
       "p3": "Vous découvrirez ici plusieurs univers qui me passionnent : du développement d’une application de vente et de personnalisation de skateboards, à la fabrication artisanale de mes propres decks de décoration, en passant par la photographie et la vidéo par drone.",
       "p4": "Chacun de ces projets représente une part de ma vision : créer avec sens, apprendre en faisant, et partager des expériences uniques."
-    },
-    "App": {
-      "title": "APPLICATION",
-      "p1": "Conçue entièrement avec Flutter, cette application mobile a pour objectif d’offrir une expérience simple, esthétique et interactive autour de la création et de la personnalisation de skateboards décoratifs.",
-      "p2": "L’utilisateur peut y créer un compte, parcourir l’ensemble de mes créations, acheter des modèles déjà disponibles, ou concevoir sa propre planche en choisissant le type de deck et le visuel qui lui correspond.",
-      "p3": "L’application intègre également des fonctionnalités de sélection de date de livraison et de messagerie directe, permettant un contact personnalisé entre le client et moi pour suivre ou ajuster sa commande.",
-      "p4": "Ce projet m’a permis de combiner design, expérience utilisateur et logique full-stack au sein d’un environnement mobile, tout en explorant la puissance et la flexibilité de Flutter pour créer une interface fluide et cohérente.",
-      "cta": "À VENIR",
-      "alt": "Aperçu application sur téléphone"
     },
     "Skate": {
       "title": "SKATEBOARD",

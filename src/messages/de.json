@@ -190,6 +190,7 @@
       "title": "DEV-PROJEKTE",
       "intro": "Eine Auswahl an Projekten, Quellcode auf GitHub.",
       "items": {
+        "chewlinboard": { "name": "ChewlinBoard", "pitch": "Flutter-App zur Gestaltung und zum Verkauf individueller Skateboards, mit 3D-Vorschau und Online-Bezahlung." },
         "vinland": { "name": "Vinland", "pitch": "Musikplayer, der meine Bibliothek von meinem selbst gehosteten NAS streamt, mit gemeinsamen Playlists." },
         "gymtimer": { "name": "GymTimer", "pitch": "Trainings-Tracker mit Pausen-Timer, der auch im Hintergrund weiterläuft." },
         "nas": { "name": "Selbst gehostetes NAS", "pitch": "Hostet meine Dateien und Apps, von außen erreichbar über sichere Tunnel." },
@@ -203,15 +204,6 @@
       "p2": "Ob Webentwicklung, Objektdesign oder visuelle Gestaltung: Ich suche nach Wegen, Ideen zum Leben zu erwecken. Diese Projekte sind für mich ein konkreter Weg zu lernen, zu wachsen und Grenzen zu verschieben.",
       "p3": "Hier findest du, was mich begeistert: von einer mobilen App zum Verkauf und zur Personalisierung dekorativer Skateboards, über handgefertigte Deko-Decks bis hin zu Fotografie mit Drohnenvideo.",
       "p4": "Jedes Projekt spiegelt meine Vision wider: sinnvoll schaffen, durch Tun lernen und besondere Erfahrungen teilen."
-    },
-    "App": {
-      "title": "APPLIKATION",
-      "p1": "Komplett mit Flutter entwickelt, bietet diese mobile App eine einfache, ästhetische und interaktive Erfahrung rund um die Gestaltung dekorativer Skateboards.",
-      "p2": "Nutzer können ein Konto anlegen, meine Werke durchstöbern, verfügbare Modelle kaufen oder ein eigenes Board entwerfen – mit frei wählbarer Deckform und Optik.",
-      "p3": "Außerdem gibt es Lieferdatenauswahl und Direktnachrichten für persönlichen Kontakt, um Bestellungen zu verfolgen oder anzupassen.",
-      "p4": "Das Projekt vereint Design, UX und Full-Stack-Logik in einer mobilen Umgebung und nutzt die Stärke und Flexibilität von Flutter für eine flüssige, stimmige Oberfläche.",
-      "cta": "BALD VERFÜGBAR",
-      "alt": "App-Vorschau auf dem Smartphone"
     },
     "Skate": {
       "title": "SKATEBOARD",
