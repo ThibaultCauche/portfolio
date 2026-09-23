@@ -190,7 +190,6 @@
       "title": "DEV PROJECTS",
       "intro": "A selection of projects, source code on GitHub.",
       "items": {
-        "chewlinboard": { "name": "ChewlinBoard", "pitch": "Flutter app to design and sell custom skateboards, with a 3D preview and online checkout." },
         "vinland": { "name": "Vinland", "pitch": "Music player streaming my library from my self-hosted NAS, with collaborative playlists." },
         "gymtimer": { "name": "GymTimer", "pitch": "Workout tracker with a rest timer that keeps running in the background." },
         "nas": { "name": "Self-hosted NAS", "pitch": "Hosts my files and apps, reachable from outside through secure tunnels." },

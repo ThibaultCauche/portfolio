@@ -1,12 +1,12 @@
 "use client";
 
-import { Github, Smartphone, Music2, Dumbbell, Server, Globe, MessagesSquare } from "lucide-react";
+import { Github, Music2, Dumbbell, Server, Globe, MessagesSquare } from "lucide-react";
 import GlassBlock from "@/components/GlassBlock";
 import { Badge } from "@/components/ui/badge";
 import { useTranslations } from "next-intl";
 
+// ChewlinBoard n'est pas ici : il a déjà sa propre section détaillée juste en dessous.
 const PROJECTS = [
-  { key: "chewlinboard", icon: Smartphone, repo: "https://github.com/Tibobg/ChewlinBoard", tags: ["Flutter", "Dart", "Firebase"] },
   { key: "vinland", icon: Music2, repo: "https://github.com/Tibobg/vinland", tags: ["Flutter", "Dart", "Navidrome"] },
   { key: "gymtimer", icon: Dumbbell, repo: "https://github.com/Tibobg/GymTimer", tags: ["Flutter", "Dart"] },
   { key: "nas", icon: Server, repo: null, tags: ["Docker", "Réseau", "Tunnels"] },
@@ -26,17 +26,19 @@ export default function DevProjectsSection() {
         {t("intro")}
       </p>
 
-      <div className="mt-8 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 md:gap-5">
+      <div className="mt-8 grid grid-cols-1 sm:grid-cols-2 gap-4 md:gap-5">
         {PROJECTS.map(({ key, icon: Icon, repo, tags }) => (
           <GlassBlock
             key={key}
             variant="base"
             className="p-5 flex flex-col gap-3 transition-transform duration-300 hover:-translate-y-1"
           >
-            <div className="h-11 w-11 rounded-xl bg-white/5 ring-1 ring-white/10 flex items-center justify-center">
-              <Icon className="h-5 w-5 text-white/80" />
+            <div className="flex items-center gap-3">
+              <div className="h-11 w-11 shrink-0 rounded-xl bg-white/5 ring-1 ring-white/10 flex items-center justify-center">
+                <Icon className="h-5 w-5 text-white/80" />
+              </div>
+              <h4 className="font-semibold text-white">{t(`items.${key}.name`)}</h4>
             </div>
-            <h4 className="font-semibold text-white">{t(`items.${key}.name`)}</h4>
             <p className="text-sm text-white/70 leading-relaxed flex-1">
               {t(`items.${key}.pitch`)}
             </p>
