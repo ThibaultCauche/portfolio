@@ -1,10 +1,14 @@
 "use client";
 import Link from "next/link";
+import dynamic from "next/dynamic";
 import { useEffect, useState } from "react";
 import Section from "@/components/section";
 import GlassBlock from "@/components/GlassBlock";
 import { useTranslations } from "next-intl";
-import Skateboard3D from "@/components/three/Skateboard3D";
+import { useInView } from "@/lib/use-in-view";
+
+// three.js + the glb model/textures (~1.3MB) are only fetched once this section nears the viewport
+const Skateboard3D = dynamic(() => import("@/components/three/Skateboard3D"), { ssr: false });
 
 export default function SkateboardSection() {
   const t = useTranslations("Projects.Skate");
@@ -23,6 +27,12 @@ export default function SkateboardSection() {
     window.addEventListener("resize", checkWidth);
     return () => window.removeEventListener("resize", checkWidth);
   }, []);
+
+  const { ref: mountRef, inView: nearViewport } = useInView<HTMLDivElement>("400px");
+  const [shouldMount, setShouldMount] = useState(false);
+  useEffect(() => {
+    if (nearViewport) setShouldMount(true);
+  }, [nearViewport]);
 
   return (
     <Section id="skateboard" className="pt-12 md:pt-20">
@@ -48,8 +58,11 @@ export default function SkateboardSection() {
 
                     {/* Droite : visuel 3D */}
           <GlassBlock className="flex items-center justify-center overflow-hidden">
-            <div className={`relative w-full transition-all duration-500 ${isMobile ? "h-[280px]" : "h-[600px] lg:h-[680px]"}`}>
-              <Skateboard3D />
+            <div
+              ref={mountRef}
+              className={`relative w-full transition-all duration-500 ${isMobile ? "h-[280px]" : "h-[600px] lg:h-[680px]"}`}
+            >
+              {shouldMount && <Skateboard3D />}
             </div>
           </GlassBlock>
         </div>

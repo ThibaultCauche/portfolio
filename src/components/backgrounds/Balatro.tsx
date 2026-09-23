@@ -211,15 +211,38 @@ export default function Balatro({
     const onWinResize = () => setSize();
     window.addEventListener("resize", onWinResize);
 
-    // Loop
+    // Loop — only runs while the canvas is on-screen and the tab is visible
     let rafId = 0;
+    let isIntersecting = false;
     const update = (time: number) => {
       rafId = requestAnimationFrame(update);
       uniforms.iTime.value = time * 0.001;
       renderer.render({ scene: mesh });
       if (gl.canvas.style.opacity !== "1") gl.canvas.style.opacity = "1";
     };
-    rafId = requestAnimationFrame(update);
+    const startLoop = () => {
+      if (!rafId) rafId = requestAnimationFrame(update);
+    };
+    const stopLoop = () => {
+      if (rafId) cancelAnimationFrame(rafId);
+      rafId = 0;
+    };
+
+    const io = new IntersectionObserver(
+      ([entry]) => {
+        isIntersecting = entry.isIntersecting;
+        if (isIntersecting && !document.hidden) startLoop();
+        else stopLoop();
+      },
+      { rootMargin: "200px" }
+    );
+    io.observe(container);
+
+    const onVisibilityChange = () => {
+      if (document.hidden) stopLoop();
+      else if (isIntersecting) startLoop();
+    };
+    document.addEventListener("visibilitychange", onVisibilityChange);
 
     // Mouse
     function handleMouseMove(e: MouseEvent) {
@@ -232,7 +255,9 @@ export default function Balatro({
     container.addEventListener("mousemove", handleMouseMove);
 
     return () => {
-      cancelAnimationFrame(rafId);
+      stopLoop();
+      io.disconnect();
+      document.removeEventListener("visibilitychange", onVisibilityChange);
       container.removeEventListener("mousemove", handleMouseMove);
       window.removeEventListener("resize", onWinResize);
       roSelf?.disconnect();

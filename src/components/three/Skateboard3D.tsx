@@ -4,6 +4,7 @@ import { useRef, useState, useEffect, useMemo, useCallback, Suspense } from "rea
 import { Canvas, useFrame } from "@react-three/fiber";
 import { Environment, ContactShadows, useGLTF } from "@react-three/drei";
 import * as THREE from "three";
+import { useInView } from "@/lib/use-in-view";
 
 const IMAGES = [
   "/skateboards/skate1.webp",
@@ -110,8 +111,10 @@ export default function Skateboard3D() {
   const textures = useSkateTextures(IMAGES);
   const activeTexture = textures[activeIndex] || null;
   const count = IMAGES.length;
+  const { ref: viewRef, inView } = useInView<HTMLDivElement>("150px");
 
   useEffect(() => {
+    if (!inView) return;
     const loop = () => {
       if (!isDragging.current) {
         const angle = ((rotationRef.current % (2 * Math.PI)) + (2 * Math.PI)) % (2 * Math.PI);
@@ -131,7 +134,7 @@ export default function Skateboard3D() {
     };
     rafRef.current = requestAnimationFrame(loop);
     return () => cancelAnimationFrame(rafRef.current);
-  }, [count]);
+  }, [count, inView]);
 
   const onDown = useCallback((e: React.PointerEvent) => {
     isDragging.current = true;
@@ -151,6 +154,7 @@ export default function Skateboard3D() {
 
   return (
     <div
+      ref={viewRef}
       className="w-full h-full relative cursor-grab active:cursor-grabbing"
       onPointerDown={onDown}
       onPointerMove={onMove}
@@ -158,7 +162,7 @@ export default function Skateboard3D() {
       onPointerLeave={onUp}
       style={{ touchAction: "none" }}
     >
-      <Canvas shadows camera={{ position: [0, 0, CAMERA_DISTANCE], fov: 40 }}>
+      <Canvas shadows frameloop={inView ? "always" : "never"} camera={{ position: [0, 0, CAMERA_DISTANCE], fov: 40 }}>
         <ambientLight intensity={0.6} />
         <directionalLight position={[5, 5, 8]} intensity={1.2} castShadow />
         <Environment preset="city" />
