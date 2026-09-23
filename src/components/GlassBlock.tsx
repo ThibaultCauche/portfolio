@@ -14,7 +14,7 @@ export default function GlassBlock({
   variant = "maquette",
   ...rest
 }: GlassProps) {
-  const base = "relative rounded-2xl backdrop-blur-xl shadow-lg shadow-black/10";
+  const base = "relative rounded-2xl backdrop-blur-md shadow-lg shadow-black/10";
 
   const variants = {
     maquette: cn(

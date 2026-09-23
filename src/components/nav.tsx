@@ -67,7 +67,7 @@ export default function Nav() {
           <motion.div
             layout
             className={clsx(
-              "rounded-full bg-white/15 backdrop-blur-xl border border-white/25 shadow-lg",
+              "rounded-full bg-white/15 backdrop-blur-md border border-white/25 shadow-lg",
               "px-3 py-1 min-[1220px]:px-4 min-[1220px]:py-1 max-[359px]:px-2 max-[359px]:py-0.5"
             )}
             transition={{ type: "spring", stiffness: 320, damping: 30 }}
@@ -108,7 +108,7 @@ export default function Nav() {
             key="sidebar"
             className={clsx(
               "hidden min-[1220px]:block fixed z-40 left-4 top-1/2 -translate-y-1/2",
-              "p-2 rounded-2xl backdrop-blur-xl border border-white/20 shadow-lg bg-white/10"
+              "p-2 rounded-2xl backdrop-blur-md border border-white/20 shadow-lg bg-white/10"
             )}
             initial={{ opacity: 0, x: -80, scaleY: 0.8 }}
             animate={{ opacity: 1, x: 0, scaleY: 1 }}

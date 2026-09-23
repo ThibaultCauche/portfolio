@@ -34,19 +34,10 @@ export default function GlobalBlobs({
             background: `radial-gradient(circle at center, ${b.color ?? "#8b5cf6"} 0%, transparent 60%)`,
             filter: `blur(${b.blur ?? "40px"})`,
             opacity: b.opacity ?? 0.32,
-            animation: `gb-breathe ${b.speed ?? "20s"} ease-in-out infinite`,
-            willChange: "transform, opacity",
             contain: "layout style paint",
           }}
         />
       ))}
-      <style jsx>{`
-        @keyframes gb-breathe {
-          0%,100% { transform: translate(-50%,-50%) scale(1); }
-          50%     { transform: translate(-50%,-50%) scale(1.04); }
-        }
-        @media (prefers-reduced-motion: reduce) { span { animation: none !important; } }
-      `}</style>
     </div>
   );
 }
