@@ -102,7 +102,7 @@ export default function SkillsSection() {
 
         <div className="mt-12 flex justify-center">
           <a
-            href="https://github.com/Tibobg"
+            href="https://github.com/ThibaultCauche"
             target="_blank"
             rel="noopener noreferrer"
             className="btn-cv btn-cv--sweep"

@@ -6,12 +6,12 @@ import { Badge } from "@/components/ui/badge";
 import { useTranslations } from "next-intl";
 
 const PROJECTS = [
-  { key: "chewlinboard", icon: Smartphone, repo: "https://github.com/Tibobg/ChewlinBoard", tags: ["Flutter", "Dart", "Firebase"] },
-  { key: "vinland", icon: Music2, repo: "https://github.com/Tibobg/vinland", tags: ["Flutter", "Dart", "Navidrome"] },
-  { key: "gymtimer", icon: Dumbbell, repo: "https://github.com/Tibobg/GymTimer", tags: ["Flutter", "Dart"] },
+  { key: "chewlinboard", icon: Smartphone, repo: "https://github.com/ThibaultCauche/ChewlinBoard", tags: ["Flutter", "Dart", "Firebase"] },
+  { key: "vinland", icon: Music2, repo: "https://github.com/ThibaultCauche/vinland", tags: ["Flutter", "Dart", "Navidrome"] },
+  { key: "gymtimer", icon: Dumbbell, repo: "https://github.com/ThibaultCauche/GymTimer", tags: ["Flutter", "Dart"] },
   { key: "nas", icon: Server, repo: null, tags: ["Docker", "Réseau", "Tunnels"] },
-  { key: "portfolio", icon: Globe, repo: "https://github.com/Tibobg/portfolio", tags: ["Next.js", "TypeScript", "Tailwind", "Framer Motion"] },
-  { key: "discordbot", icon: MessagesSquare, repo: "https://github.com/Tibobg/discord-bot", tags: ["Node.js", "JavaScript"] },
+  { key: "portfolio", icon: Globe, repo: "https://github.com/ThibaultCauche/portfolio", tags: ["Next.js", "TypeScript", "Tailwind", "Framer Motion"] },
+  { key: "discordbot", icon: MessagesSquare, repo: "https://github.com/ThibaultCauche/discord-bot", tags: ["Node.js", "JavaScript"] },
 ] as const;
 
 export default function DevProjectsSection() {
