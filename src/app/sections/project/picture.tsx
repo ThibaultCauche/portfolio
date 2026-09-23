@@ -5,6 +5,7 @@ import manifest from "@/../public/photos/manifest.json";
 import GlassBlock from "@/components/GlassBlock";
 import Link from "next/link";
 import { useTranslations } from "next-intl";
+import { useInView } from "@/lib/use-in-view";
 
 const PHOTO_URLS = (manifest as string[]).map((n) => `/photos/${n}`);
 
@@ -39,6 +40,7 @@ function PhotoPile({ photos, className = "" }: { photos: string[]; className?: s
   const [flying, setFlying] = useState<FlyingPhoto[]>([]);
   const [vw, setVw] = useState(0);
   const [vh, setVh] = useState(0);
+  const { ref: viewRef, inView } = useInView<HTMLDivElement>("300px");
 
   const isMobile = vw < 768;
   const POLAROID_W = isMobile ? 140 : 220;
@@ -57,7 +59,7 @@ function PhotoPile({ photos, className = "" }: { photos: string[]; className?: s
   }, []);
 
   useEffect(() => {
-    if (!photos.length) return;
+    if (!photos.length || !inView) return;
     const pickTarget = () => {
       const { vw, vh } = dimsRef.current;
       if (vw === 0 || vh === 0) return null;
@@ -84,7 +86,7 @@ function PhotoPile({ photos, className = "" }: { photos: string[]; className?: s
     tick();
     intervalRef.current = setInterval(tick, 2500);
     return () => { if (intervalRef.current) clearInterval(intervalRef.current); intervalRef.current = null; };
-  }, [photos]);
+  }, [photos, inView]);
 
   const onArrive = useCallback((f: FlyingPhoto) => {
     if (arrivedRef.current.has(f.id)) return;
@@ -142,7 +144,7 @@ function PhotoPile({ photos, className = "" }: { photos: string[]; className?: s
   }, [photos, vw, vh, BACKDROP_COUNT, BACKDROP_W]);
 
   return (
-    <div className={`relative -mx-[calc((100vw-100%)/2)] w-screen ${className}`}>
+    <div ref={viewRef} className={`relative -mx-[calc((100vw-100%)/2)] w-screen ${className}`}>
       <div className={`${isMobile ? "h-[78vw] min-h-[360px] max-h-[640px]" : "h-[60vw] min-h-[420px] max-h-[760px] overflow-visible"} relative`}>
         {/* Bandeau de fond */}
         <div className="absolute inset-0 pointer-events-none -z-10" aria-hidden>
