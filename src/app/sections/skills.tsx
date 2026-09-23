@@ -15,12 +15,10 @@ import { useTranslations } from "next-intl";
 
 type Category = "languages" | "frameworks" | "tools" | "other";
 type IconType = React.ComponentType<React.SVGProps<SVGSVGElement>>;
-type LevelCode = "beginner" | "intermediate" | "advanced" | "expert";
 
 interface Skill {
   name: string;
   logo?: string;
-  level?: LevelCode;
   // Optionnel: pour les concepts (UI/UX, CI/CD...) afin d'avoir l'icône correcte
   tag?: "uiux" | "architecture" | "microservices" | "api" | "cicd" | "security" | "a11y_seo" | "testing" | "pm" | "devops" | "cloud" | "agile";
 }
@@ -43,7 +41,6 @@ export default function SkillsSection() {
   // 1) Titre, catégories, niveaux, CTA depuis messages
   const title = t("title");
   const categories = t.raw("categories") as Record<Category, string>;
-  const levelLabels = t.raw("levels") as Record<LevelCode, string>;
   const ctaGithub = t("ctaGithub");
 
   // 2) Items par catégorie depuis messages
@@ -98,7 +95,7 @@ export default function SkillsSection() {
             className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-4 md:gap-6"
           >
             {filtered.map((skill) => (
-              <SkillCard key={`${skill.name}-${skill.logo ?? "n"}`} skill={skill} levelLabels={levelLabels} />
+              <SkillCard key={`${skill.name}-${skill.logo ?? "n"}`} skill={skill} />
             ))}
           </motion.div>
         </AnimatePresence>
@@ -118,7 +115,7 @@ export default function SkillsSection() {
   );
 }
 
-function SkillCard({ skill, levelLabels }: { skill: Skill; levelLabels: Record<LevelCode, string> }) {
+function SkillCard({ skill }: { skill: Skill }) {
   return (
     <motion.div
       whileHover={{ y: -4, scale: 1.02 }}
@@ -136,11 +133,6 @@ function SkillCard({ skill, levelLabels }: { skill: Skill; levelLabels: Record<L
           <div className="font-semibold text-white leading-tight">
             <SkillName text={skill.name} />
           </div>
-          {skill.level && (
-            <p className="text-xs text-white/60 mt-0.5 capitalize">
-              {levelLabels?.[skill.level] ?? skill.level}
-            </p>
-          )}
         </div>
       </div>
 

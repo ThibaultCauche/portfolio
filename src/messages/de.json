@@ -1,7 +1,7 @@
 {
   "Meta": {
-    "title": "Thibault Cauche — Full-Stack-Entwickler & Designer",
-    "description": "Portfolio von Thibault Cauche: Full-Stack-Entwickler, UI/UX-Designer. React-, Flutter- und Next.js-Projekte."
+    "title": "Thibault Cauche — Fullstack- & Mobile-Entwickler",
+    "description": "Portfolio von Thibault Cauche, Fullstack- & Mobile-Entwickler: React, .NET, Flutter. Projekte, Erfahrung und Fähigkeiten."
   },
   "Nav": {
     "home": "Start",
@@ -22,7 +22,7 @@
   },
   "Hero": {
     "name": "Thibault Cauche",
-    "title": "Full-Stack-Entwickler & Designer",
+    "title": "Fullstack- & Mobile-Entwickler – React, .NET, Flutter",
     "ctaProjects": "Meine Projekte ansehen",
     "ctaContact": "Kontakt aufnehmen"
   },
@@ -36,43 +36,44 @@
     "studiesLabel": "Studium",
     "workEntries": [
       {
-        "title": "Werkstudent Softwareentwicklung (Ausbildung)",
+        "title": "Ingenieur Studien & Entwicklung (Ausbildung)",
         "place": "IMH Niort",
         "years": "2023 – 2025",
         "details": [
+          "Konzeption und Entwicklung einer Log-Analyse-Pipeline zur Zentralisierung von Anwendungsfehlern in Elasticsearch",
+          "Entwicklung eines Kundensuchtools in React, angebunden an interne Services",
+          "Monitoring-Dashboards für Qualität, Nachverfolgbarkeit und Performance-Überwachung",
           "Entwicklung modularer Anwendungen auf Basis einer Microservices-Architektur",
-          "Aufbau von Dashboards zur Überwachung und Analyse der Systemleistung",
           "Automatisierte Deployments und Einrichtung von CI/CD-Pipelines"
         ]
       },
       {
-        "title": "Werkstudent Frontend-Entwicklung / Design",
+        "title": "Frontend-Entwickler und Designer (Ausbildung)",
         "place": "LENRA La Rochelle",
         "years": "2021 – 2022",
         "details": [
-          "Konzeption und Entwicklung eines kompletten E-Commerce-Webauftritts – von Mockups bis Produktion",
-          "Gestaltung moderner, intuitiver Oberflächen in Zusammenarbeit mit dem Design-Team",
-          "Optimierung der User Experience und Go-Live des Projekts"
+          "Konzeption der Architektur und Nutzerführung einer Event-Website",
+          "Vollständige UX/UI-Konzepte: Wireframes, Prototypen, Design System",
+          "Responsive Frontend-Entwicklung in HTML, CSS und JavaScript bis zum Go-Live"
         ]
       },
       {
-        "title": "Befristete Anstellung – Netzwerk & IT-Architektur",
+        "title": "Techniker Netzwerk & Architektur (befristete Anstellung)",
         "place": "Léa Nature Périgny",
         "years": "Juli – August 2021",
         "details": [
-          "Wartung und Weiterentwicklung interner Tools in verteilter Umgebung",
-          "Einrichtung von technischem Monitoring und zentralisiertem Logging",
-          "Automatisierte Deployments und Überwachung per CI/CD-Pipelines"
+          "Verwaltung und Architektur des Unternehmensnetzwerks",
+          "Technischer Support und Wartung der internen Infrastruktur und Tools",
+          "Einrichtung von technischem Monitoring und zentralisiertem Logging"
         ]
       },
       {
-        "title": "Praktikant Anwendungsentwicklung",
+        "title": "Anwendungsentwickler (Praktikum)",
         "place": "Léa Nature Périgny",
         "years": "Mai – Juli 2021",
         "details": [
-          "Weiterentwicklung einer internen Anwendung durch neue Seiten",
-          "Mitarbeit in einem erfahrenen Engineering-Team an Business-Features",
-          "Erste praktische Erfahrung mit Microservices und CI/CD-Tools"
+          "Entwicklung neuer Seiten und Funktionen für eine interne Anwendung entsprechend fachlicher Anforderungen",
+          "Analyse der Nutzerbedürfnisse und Auswahl geeigneter technischer Lösungen"
         ]
       }
     ],
@@ -127,62 +128,60 @@
       "tools": "Tools",
       "other": "Sonstiges"
     },
-    "levels": {
-      "beginner": "Einsteiger",
-      "intermediate": "Fortgeschritten",
-      "advanced": "Erfahren",
-      "expert": "Experte"
-    },
     "ctaGithub": "Mein GitHub ansehen",
     "items": {
       "languages": [
-        { "name": "TypeScript", "logo": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg", "level": "advanced" },
-        { "name": "JavaScript", "logo": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg", "level": "intermediate" },
-        { "name": "HTML5", "logo": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg", "level": "advanced" },
-        { "name": "CSS3", "logo": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg", "level": "advanced" },
-        { "name": "SQL", "logo": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg", "level": "intermediate" },
-        { "name": "C#", "logo": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/csharp/csharp-original.svg", "level": "intermediate" },
-        { "name": "Dart", "logo": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/dart/dart-original.svg", "level": "advanced" },
-        { "name": "JSON", "logo": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/json/json-original.svg", "level": "intermediate" },
-        { "name": "Bash", "logo": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bash/bash-original.svg", "level": "advanced" }
+        { "name": "TypeScript", "logo": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg" },
+        { "name": "JavaScript", "logo": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" },
+        { "name": "HTML5", "logo": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" },
+        { "name": "CSS3", "logo": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" },
+        { "name": "MySQL", "logo": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg" },
+        { "name": "MongoDB", "logo": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original.svg" },
+        { "name": "C#", "logo": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/csharp/csharp-original.svg" },
+        { "name": "Dart", "logo": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/dart/dart-original.svg" },
+        { "name": "Bash", "logo": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bash/bash-original.svg" }
       ],
       "frameworks": [
-        { "name": "React", "logo": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg", "level": "advanced" },
-        { "name": "Next.js", "logo": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nextjs/nextjs-original.svg", "level": "intermediate" },
-        { "name": "Nest.js", "logo": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nestjs/nestjs-original.svg", "level": "intermediate" },
-        { "name": "React Native", "logo": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg", "level": "intermediate" },
-        { "name": "Tailwind CSS", "logo": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tailwindcss/tailwindcss-original.svg", "level": "advanced" },
-        { "name": "Flutter", "logo": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/flutter/flutter-original.svg", "level": "advanced" },
-        { "name": "Prisma", "logo": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/prisma/prisma-original.svg", "level": "intermediate" },
-        { "name": "Vite", "level": "advanced" },
-        { "name": "Vue.js", "logo": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vuejs/vuejs-original.svg", "level": "intermediate" }
+        { "name": "React", "logo": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" },
+        { "name": "Next.js", "logo": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nextjs/nextjs-original.svg" },
+        { "name": ".NET", "logo": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/dotnetcore/dotnetcore-original.svg" },
+        { "name": "Node.js", "logo": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg" },
+        { "name": "Express", "logo": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/express/express-original.svg" },
+        { "name": "Nest.js", "logo": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nestjs/nestjs-original.svg" },
+        { "name": "React Native", "logo": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" },
+        { "name": "Tailwind CSS", "logo": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tailwindcss/tailwindcss-original.svg" },
+        { "name": "Flutter", "logo": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/flutter/flutter-original.svg" },
+        { "name": "Prisma", "logo": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/prisma/prisma-original.svg" },
+        { "name": "Vite" },
+        { "name": "Vue.js", "logo": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vuejs/vuejs-original.svg" }
       ],
       "tools": [
-        { "name": "GitHub", "logo": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg", "level": "advanced" },
-        { "name": "VS Code", "logo": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vscode/vscode-original.svg", "level": "advanced" },
-        { "name": "Docker", "logo": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/docker/docker-original.svg", "level": "intermediate" },
-        { "name": "Postman", "logo": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postman/postman-original.svg", "level": "intermediate" },
-        { "name": "Figma", "logo": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/figma/figma-original.svg", "level": "advanced" },
-        { "name": "Elasticsearch", "logo": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/elasticsearch/elasticsearch-original.svg", "level": "intermediate" },
-        { "name": "Notion", "level": "advanced" },
-        { "name": "Trello", "level": "advanced" },
-        { "name": "Jira", "level": "intermediate" },
-        { "name": "pnpm", "level": "advanced" },
-        { "name": "npm", "logo": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/npm/npm-original-wordmark.svg", "level": "advanced" },
-        { "name": "Visual Studio", "logo": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/visualstudio/visualstudio-plain.svg", "level": "intermediate" }
+        { "name": "GitHub", "logo": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" },
+        { "name": "Git", "logo": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg" },
+        { "name": "VS Code", "logo": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vscode/vscode-original.svg" },
+        { "name": "Docker", "logo": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/docker/docker-original.svg" },
+        { "name": "Postman", "logo": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postman/postman-original.svg" },
+        { "name": "Figma", "logo": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/figma/figma-original.svg" },
+        { "name": "Elasticsearch", "logo": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/elasticsearch/elasticsearch-original.svg" },
+        { "name": "Notion" },
+        { "name": "Trello" },
+        { "name": "Jira" },
+        { "name": "pnpm" },
+        { "name": "npm", "logo": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/npm/npm-original-wordmark.svg" },
+        { "name": "Visual Studio", "logo": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/visualstudio/visualstudio-plain.svg" }
       ],
       "other": [
-        { "name": "Agile/Scrum-Methoden", "tag": "agile", "level": "intermediate" },
-        { "name": "UI/UX Design", "tag": "uiux", "level": "advanced" },
-        { "name": "DevOps", "tag": "devops", "level": "intermediate" },
-        { "name": "Softwarearchitektur", "tag": "architecture", "level": "intermediate" },
-        { "name": "Microservices", "tag": "microservices", "level": "intermediate" },
-        { "name": "REST-APIs", "tag": "api", "level": "intermediate" },
-        { "name": "CI/CD", "tag": "cicd", "level": "intermediate" },
-        { "name": "Sicherheit & Authentifizierung", "tag": "security", "level": "advanced" },
-        { "name": "SEO & Barrierefreiheit", "tag": "a11y_seo", "level": "advanced" },
-        { "name": "Unit- & automatisierte Tests", "tag": "testing", "level": "advanced" },
-        { "name": "Projektmanagement", "tag": "pm", "level": "advanced" }
+        { "name": "Agile/Scrum-Methoden", "tag": "agile" },
+        { "name": "UI/UX Design", "tag": "uiux" },
+        { "name": "DevOps", "tag": "devops" },
+        { "name": "Softwarearchitektur", "tag": "architecture" },
+        { "name": "Microservices", "tag": "microservices" },
+        { "name": "REST-APIs", "tag": "api" },
+        { "name": "CI/CD", "tag": "cicd" },
+        { "name": "Sicherheit & Authentifizierung", "tag": "security" },
+        { "name": "SEO & Barrierefreiheit", "tag": "a11y_seo" },
+        { "name": "Unit- & automatisierte Tests", "tag": "testing" },
+        { "name": "Projektmanagement", "tag": "pm" }
       ]
     }
   },

@@ -1,7 +1,7 @@
 {
   "Meta": {
-    "title": "Thibault Cauche — Full-Stack Developer & Designer",
-    "description": "Portfolio of Thibault Cauche: full-stack developer, UI/UX designer. React, Flutter and Next.js projects."
+    "title": "Thibault Cauche — Fullstack & Mobile Developer",
+    "description": "Portfolio of Thibault Cauche, fullstack & mobile developer: React, .NET, Flutter. Projects, experience and skills."
   },
   "Nav": {
     "home": "Home",
@@ -22,7 +22,7 @@
   },
   "Hero": {
     "name": "Thibault Cauche",
-    "title": "Full-Stack Developer & Designer",
+    "title": "Fullstack & Mobile Developer – React, .NET, Flutter",
     "ctaProjects": "View my projects",
     "ctaContact": "Contact me"
   },
@@ -36,43 +36,44 @@
     "studiesLabel": "Studies",
     "workEntries": [
       {
-        "title": "Software Engineer Apprentice",
+        "title": "Software Engineer (work-study)",
         "place": "IMH Niort",
         "years": "2023 – 2025",
         "details": [
+          "Designed and built a log-analysis pipeline centralizing application errors in Elasticsearch",
+          "Built a client search tool in React connected to internal services",
+          "Created monitoring dashboards for quality, traceability and performance tracking",
           "Built modular applications following a microservices architecture",
-          "Created dashboards to monitor and analyze system performance",
           "Automated deployments and set up CI/CD pipelines"
         ]
       },
       {
-        "title": "Front-end Developer / Designer Apprentice",
+        "title": "Front-end Developer / Designer (work-study)",
         "place": "LENRA La Rochelle",
         "years": "2021 – 2022",
         "details": [
-          "Designed and developed a full e-commerce website, from mockups to production",
-          "Crafted modern, intuitive interfaces in collaboration with the design team",
-          "Improved UX and launched the final project"
+          "Designed the architecture and UX of an event showcase website",
+          "Full UX/UI mockups: wireframes, prototypes, design system",
+          "Built the responsive front-end in HTML, CSS and JavaScript, through to launch"
         ]
       },
       {
-        "title": "Fixed-term contract – Network & IT Architecture",
+        "title": "Network & IT Architecture Technician (fixed-term contract)",
         "place": "Léa Nature Périgny",
         "years": "July – August 2021",
         "details": [
-          "Maintained and improved internal tools in a distributed environment",
-          "Set up technical monitoring and centralized logging",
-          "Automated deployments and supervision with CI/CD pipelines"
+          "Managed and architected the company's IT network",
+          "Provided technical support and maintained internal infrastructure and tools",
+          "Set up technical monitoring and centralized logging tools"
         ]
       },
       {
-        "title": "Application Developer Intern",
+        "title": "Application Developer (internship)",
         "place": "Léa Nature Périgny",
         "years": "May – July 2021",
         "details": [
-          "Enhanced an internal application by designing new pages",
-          "Worked within an experienced engineering team on business features",
-          "First hands-on exposure to microservices and CI/CD tooling"
+          "Built new pages and features for an internal application addressing a business need",
+          "Analyzed user needs and chose appropriate technical solutions"
         ]
       }
     ],
@@ -127,62 +128,60 @@
       "tools": "Tools",
       "other": "Other"
     },
-    "levels": {
-      "beginner": "beginner",
-      "intermediate": "intermediate",
-      "advanced": "advanced",
-      "expert": "expert"
-    },
     "ctaGithub": "View my GitHub",
     "items": {
       "languages": [
-        { "name": "TypeScript", "logo": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg", "level": "advanced" },
-        { "name": "JavaScript", "logo": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg", "level": "intermediate" },
-        { "name": "HTML5", "logo": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg", "level": "advanced" },
-        { "name": "CSS3", "logo": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg", "level": "advanced" },
-        { "name": "SQL", "logo": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg", "level": "intermediate" },
-        { "name": "C#", "logo": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/csharp/csharp-original.svg", "level": "intermediate" },
-        { "name": "Dart", "logo": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/dart/dart-original.svg", "level": "advanced" },
-        { "name": "JSON", "logo": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/json/json-original.svg", "level": "intermediate" },
-        { "name": "Bash", "logo": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bash/bash-original.svg", "level": "advanced" }
+        { "name": "TypeScript", "logo": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg" },
+        { "name": "JavaScript", "logo": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" },
+        { "name": "HTML5", "logo": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" },
+        { "name": "CSS3", "logo": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" },
+        { "name": "MySQL", "logo": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg" },
+        { "name": "MongoDB", "logo": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original.svg" },
+        { "name": "C#", "logo": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/csharp/csharp-original.svg" },
+        { "name": "Dart", "logo": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/dart/dart-original.svg" },
+        { "name": "Bash", "logo": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bash/bash-original.svg" }
       ],
       "frameworks": [
-        { "name": "React", "logo": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg", "level": "advanced" },
-        { "name": "Next.js", "logo": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nextjs/nextjs-original.svg", "level": "intermediate" },
-        { "name": "Nest.js", "logo": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nestjs/nestjs-original.svg", "level": "intermediate" },
-        { "name": "React Native", "logo": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg", "level": "intermediate" },
-        { "name": "Tailwind CSS", "logo": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tailwindcss/tailwindcss-original.svg", "level": "advanced" },
-        { "name": "Flutter", "logo": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/flutter/flutter-original.svg", "level": "advanced" },
-        { "name": "Prisma", "logo": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/prisma/prisma-original.svg", "level": "intermediate" },
-        { "name": "Vite", "level": "advanced" },
-        { "name": "Vue.js", "logo": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vuejs/vuejs-original.svg", "level": "intermediate" }
+        { "name": "React", "logo": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" },
+        { "name": "Next.js", "logo": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nextjs/nextjs-original.svg" },
+        { "name": ".NET", "logo": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/dotnetcore/dotnetcore-original.svg" },
+        { "name": "Node.js", "logo": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg" },
+        { "name": "Express", "logo": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/express/express-original.svg" },
+        { "name": "Nest.js", "logo": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nestjs/nestjs-original.svg" },
+        { "name": "React Native", "logo": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" },
+        { "name": "Tailwind CSS", "logo": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tailwindcss/tailwindcss-original.svg" },
+        { "name": "Flutter", "logo": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/flutter/flutter-original.svg" },
+        { "name": "Prisma", "logo": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/prisma/prisma-original.svg" },
+        { "name": "Vite" },
+        { "name": "Vue.js", "logo": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vuejs/vuejs-original.svg" }
       ],
       "tools": [
-        { "name": "GitHub", "logo": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg", "level": "advanced" },
-        { "name": "VS Code", "logo": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vscode/vscode-original.svg", "level": "advanced" },
-        { "name": "Docker", "logo": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/docker/docker-original.svg", "level": "intermediate" },
-        { "name": "Postman", "logo": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postman/postman-original.svg", "level": "intermediate" },
-        { "name": "Figma", "logo": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/figma/figma-original.svg", "level": "advanced" },
-        { "name": "Elasticsearch", "logo": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/elasticsearch/elasticsearch-original.svg", "level": "intermediate" },
-        { "name": "Notion", "level": "advanced" },
-        { "name": "Trello", "level": "advanced" },
-        { "name": "Jira", "level": "intermediate" },
-        { "name": "pnpm", "level": "advanced" },
-        { "name": "npm", "logo": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/npm/npm-original-wordmark.svg", "level": "advanced" },
-        { "name": "Visual Studio", "logo": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/visualstudio/visualstudio-plain.svg", "level": "intermediate" }
+        { "name": "GitHub", "logo": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" },
+        { "name": "Git", "logo": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg" },
+        { "name": "VS Code", "logo": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vscode/vscode-original.svg" },
+        { "name": "Docker", "logo": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/docker/docker-original.svg" },
+        { "name": "Postman", "logo": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postman/postman-original.svg" },
+        { "name": "Figma", "logo": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/figma/figma-original.svg" },
+        { "name": "Elasticsearch", "logo": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/elasticsearch/elasticsearch-original.svg" },
+        { "name": "Notion" },
+        { "name": "Trello" },
+        { "name": "Jira" },
+        { "name": "pnpm" },
+        { "name": "npm", "logo": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/npm/npm-original-wordmark.svg" },
+        { "name": "Visual Studio", "logo": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/visualstudio/visualstudio-plain.svg" }
       ],
       "other": [
-        { "name": "Agile/Scrum Methodologies", "tag": "agile", "level": "intermediate" },
-        { "name": "UI/UX Design", "tag": "uiux", "level": "advanced" },
-        { "name": "DevOps", "tag": "devops", "level": "intermediate" },
-        { "name": "Software Architecture", "tag": "architecture", "level": "intermediate" },
-        { "name": "Microservices", "tag": "microservices", "level": "intermediate" },
-        { "name": "REST APIs", "tag": "api", "level": "intermediate" },
-        { "name": "CI/CD", "tag": "cicd", "level": "intermediate" },
-        { "name": "Security & Auth", "tag": "security", "level": "advanced" },
-        { "name": "SEO & Accessibility", "tag": "a11y_seo", "level": "advanced" },
-        { "name": "Unit & Automated Tests", "tag": "testing", "level": "advanced" },
-        { "name": "Project Management", "tag": "pm", "level": "advanced" }
+        { "name": "Agile/Scrum Methodologies", "tag": "agile" },
+        { "name": "UI/UX Design", "tag": "uiux" },
+        { "name": "DevOps", "tag": "devops" },
+        { "name": "Software Architecture", "tag": "architecture" },
+        { "name": "Microservices", "tag": "microservices" },
+        { "name": "REST APIs", "tag": "api" },
+        { "name": "CI/CD", "tag": "cicd" },
+        { "name": "Security & Auth", "tag": "security" },
+        { "name": "SEO & Accessibility", "tag": "a11y_seo" },
+        { "name": "Unit & Automated Tests", "tag": "testing" },
+        { "name": "Project Management", "tag": "pm" }
       ]
     }
   },
