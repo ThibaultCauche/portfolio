@@ -6,12 +6,12 @@ import { Environment, ContactShadows, useGLTF } from "@react-three/drei";
 import * as THREE from "three";
 
 const IMAGES = [
-  "/skateboards/skate1.png",
-  "/skateboards/skate2.png",
-  "/skateboards/skate3.png",
-  "/skateboards/skate4.png",
-  "/skateboards/skate5.png",
-  "/skateboards/skate6.png",
+  "/skateboards/skate1.webp",
+  "/skateboards/skate2.webp",
+  "/skateboards/skate3.webp",
+  "/skateboards/skate4.webp",
+  "/skateboards/skate5.webp",
+  "/skateboards/skate6.webp",
 ];
 
 // ─── TAILLE & POSITION DU SKATEBOARD 3D ───

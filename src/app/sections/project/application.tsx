@@ -34,7 +34,7 @@ export default function AppSection() {
           <GlassBlock className="order-2 lg:order-1 px-3 flex items-center justify-center">
             <div className="h-[340px] sm:h-[420px] md:h-[460px] lg:h-[560px] xl:h-[620px] flex items-center justify-center">
               <Image
-                src="/app-screens/image.png"
+                src="/app-screens/image.webp"
                 alt={t("alt")}
                 width={1400}
                 height={2800}
