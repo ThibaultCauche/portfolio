@@ -22,13 +22,13 @@
   },
   "Hero": {
     "name": "Thibault Cauche",
-    "title": "Développeur fullstack & mobile : React, .NET, Flutter",
+    "title": "Développeur fullstack & mobile",
     "ctaProjects": "Voir mes projets",
     "ctaContact": "Me contacter"
   },
   "About": {
     "title": "À PROPOS",
-    "tagline": "Développeur fullstack et mobile, formé en alternance pendant près de trois ans. Je dessine mes interfaces avant de les coder, en React pour le web et en Flutter pour le mobile. Je cherche un CDI à Toulouse ou dans la région rochelaise, à partir de décembre 2026."
+    "tagline": "Développeur full-stack curieux avec une âme de designer aimant donner vie à des interfaces élégantes et intuitives"
   },
   "Timeline": {
     "title": "PARCOURS",
@@ -200,21 +200,28 @@
     },
     "Intro": {
       "title": "PROJETS",
-      "p1": "Je code, mais j'aime aussi fabriquer et photographier. Vous trouverez ici mes projets de développement, les skateboards décoratifs que je fabrique à la main, et mes photos et vidéos, dont une partie au drone.",
-      "p2": "Ce sont surtout des projets pour apprendre en faisant."
+      "p1": "Chaque projet est pour moi une occasion d'essayer quelque chose de nouveau, en mélangeant technique, design et création.",
+      "p2": "Je passe du développement web à la fabrication d'objets ou à la photo, selon l'idée du moment. C'est ma façon d'apprendre concrètement et de progresser en restant curieux.",
+      "p3": "Vous trouverez ici plusieurs choses qui me passionnent : une application de vente et de personnalisation de skateboards, les decks de décoration que je fabrique à la main, et mes photos et vidéos au drone.",
+      "p4": "Dans tous ces projets, j'aime créer des choses qui ont du sens pour moi, apprendre en les faisant, puis partager le résultat."
     },
     "Skate": {
       "title": "SKATEBOARD",
-      "p1": "Je conçois des skateboards décoratifs, pensés pour être exposés chez soi. Chaque planche est faite sur mesure : on choisit la forme du deck, les motifs et les finitions, et certaines sont découpées directement dans le bois.",
-      "p2": "Je cherche un rendu épuré, à mi-chemin entre le design et l'artisanat.",
+      "p1": "Mes skateboards sont d'abord des objets de décoration. Je les conçois pour être exposés et donner du caractère à une pièce.",
+      "p2": "Chaque planche est faite sur mesure : on choisit la forme du deck, les motifs et les finitions. Certaines sont découpées directement dans le bois, ce qui laisse toute liberté sur la forme et donne un rendu plus brut.",
+      "p3": "Quand je dessine une planche, je fais attention à l'équilibre visuel et je cherche un motif original, pour que chaque pièce ait sa propre identité.",
+      "p4": "Le résultat se situe entre le design et l'artisanat : des lignes épurées, une forme sur mesure, et un objet qui garde quelque chose du mouvement du skate.",
       "cta": "VOIR PLUS",
       "alt": "Planche de skateboard"
     },
     "Photo": {
       "title": "PHOTO",
       "cta": "GALERIE",
-      "p1": "Je photographie surtout des animaux et des portraits, parfois des paysages. J'aime garder une trace fidèle de ce que j'ai vu, un regard ou une lumière qui m'a marqué.",
-      "p2": "En extérieur, j'observe la nature et la faune. En portrait, j'essaie de rendre l'expression de la personne. Il m'arrive aussi d'être photographe sur des événements, ce qui me fait découvrir d'autres contextes et d'autres gens.",
+      "p1": "Je photographie surtout les animaux et les gens, avec aussi un faible pour les paysages. Je cherche des instants vrais, pris sur le vif.",
+      "p2": "Pour moi, la photo sert d'abord à garder une trace. J'aime pouvoir retrouver plus tard un souvenir fidèle de ce que j'ai vécu ou observé.",
+      "p3": "Ça peut être un regard, une lumière ou une scène du quotidien. Chaque image fige un moment qui m'a marqué.",
+      "p4": "Dehors, je passe du temps à observer la nature et la faune. En portrait, j'essaie de faire ressortir l'expression et la personnalité de la personne en face de moi.",
+      "p5": "Je suis aussi photographe sur certains événements. Ça me fait découvrir d'autres lieux et d'autres gens, et ça fait évoluer ma façon de photographier.",
       "altBackdrop": "Photo de fond",
       "altPhoto": "Photo",
       "altFlying": "Photo en mouvement"

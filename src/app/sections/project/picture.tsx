@@ -216,6 +216,9 @@ export default function PhotoSection() {
           </Link>
           <p className="text-foreground/80 leading-relaxed text-left">{t("p1")}</p>
           <p className="mt-2 text-foreground/80 leading-relaxed">{t("p2")}</p>
+          <p className="mt-2 text-foreground/80 leading-relaxed">{t("p3")}</p>
+          <p className="mt-2 text-foreground/80 leading-relaxed">{t("p4")}</p>
+          <p className="mt-4 text-foreground/80 leading-relaxed">{t("p5")}</p>
         </GlassBlock>
 
         <div className="absolute left-1/2 -translate-x-1/2 top-[60%] md:top-[50%] w-screen z-20">

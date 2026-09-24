@@ -46,6 +46,8 @@ export default function SkateboardSection() {
 
             <p className="mt-4 text-foreground/80 leading-relaxed">{t("p1")}</p>
             <p className="mt-4 text-foreground/80 leading-relaxed">{t("p2")}</p>
+            <p className="mt-4 text-foreground/80 leading-relaxed">{t("p3")}</p>
+            <p className="mt-4 text-foreground/80 leading-relaxed">{t("p4")}</p>
 
             <Link href="https://flic.kr/s/aHBqjCy3tV" target="_blank" className="mt-auto self-center pt-3">
               <button className="btn-cv btn-cv--sweep">

@@ -36,7 +36,7 @@ export default async function OpengraphImage() {
             color: "rgba(255,255,255,0.75)",
           }}
         >
-          Développeur fullstack &amp; mobile : React, .NET, Flutter
+          Développeur fullstack &amp; mobile
         </div>
       </div>
     ),
