@@ -18,10 +18,10 @@ export const viewport = {
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://www.thibaultcauche.com"),
-  title: "Thibault Cauche — Développeur fullstack & mobile",
+  title: "Thibault Cauche, développeur fullstack et mobile",
   description: "Portfolio de Thibault Cauche, développeur fullstack & mobile : React, .NET, Flutter.",
   openGraph: {
-    title: "Thibault Cauche — Développeur fullstack & mobile",
+    title: "Thibault Cauche, développeur fullstack et mobile",
     description: "Portfolio de Thibault Cauche, développeur fullstack & mobile : React, .NET, Flutter.",
     url: "https://www.thibaultcauche.com",
     siteName: "Thibault Cauche",

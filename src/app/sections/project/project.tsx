@@ -19,8 +19,6 @@ export default function Projects() {
             </h2>
             <p className="text-foreground/80 leading-relaxed">{t("p1")}</p>
             <p className="text-foreground/80 leading-relaxed">{t("p2")}</p>
-            <p className="text-foreground/80 leading-relaxed">{t("p3")}</p>
-            <p className="text-foreground/80 leading-relaxed">{t("p4")}</p>
           </GlassBlock>
         </div>
 

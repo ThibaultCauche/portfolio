@@ -86,7 +86,7 @@ export async function generateMetadata({
 }): Promise<Metadata> {
   const { locale } = await params;
   const l = (["fr", "en", "de"].includes(locale) ? locale : "fr") as Locale;
-  return { title: `${titles[l]} — Thibault Cauche`, robots: { index: false, follow: true } };
+  return { title: `${titles[l]}, Thibault Cauche`, robots: { index: false, follow: true } };
 }
 
 export default async function LegalNoticePage({
