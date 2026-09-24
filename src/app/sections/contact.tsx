@@ -178,7 +178,7 @@ export default function ContactSection() {
                   <Linkedin className="h-4 w-4" /> Thibault Cauche
                 </Link>
                 <Link
-                  href="https://discord.com/users/thibault9090"
+                  href="https://discord.com/users/919655971058491493"
                   target="_blank"
                   className="inline-flex items-center gap-2 rounded-full border border-white/10 bg-white/[0.06] px-3 py-1.5 text-white/80 hover:text-white"
                   aria-label="Discord"
